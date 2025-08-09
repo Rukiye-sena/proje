@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOŞGELDİN!</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<style>
+
+h1{
+ background-color: rgb(243, 174, 174);
+ color: red;
+ font-weight: bold; 
+ display: block;
+ padding: 10px;
+ text-align: center;
+ margin-left: 0%;
+}
+
+div{
+ width: 50%;
+ height: 50%;
+ background-color: rgb(144, 138, 224);
+ margin-left: 25%;
+}
+
+  #mesaj {
+    display: none;
+    background-color: #9ab4ff;
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 8px;
+    margin-left: 39%;
+    }
+
+#mektup{
+    text-align: center;
+    font-weight: bold;
+}
+img{
+    margin-left: 45%;
+}
+
+</style>
+</head>
+<body>
+
+
+   <br><br>
+  <h1>Nisa'nın bir mesajı var. Mesajı görmek için mesaja tıkla!</h1>
+
+<img  width="100px" height="100px" id="mektup" src="new-email.png" alt="mesaj var!!">
+
+<div id="mesaj">
+<br>
+
+
+<p id="mektup">NİSA iyi bir kız..</p>
+<p id="mektup">NİSA eğlenceli bir kişiliğe sahiptir..</p>
+<p id="mektup">NİSA arkadaşlarıyla empati kurabilir..</p>
+<p id="mektup">NİSA hem harbi hem barbie'dir..</p>
+<p id="mektup">NİSA çiğköfte ve mantı sever..</p>
+<p id="mektup">NİSA'nın kola aşkını sorgulamayın..</p>
+<p id="mektup">NİSA bu aralar çok sıkılıyor..Çünkü en iyi arkadaşı yanında değill! Üzülmeyin birkaç hafta sonra kavuşacaklarr!</p>
+
+</div>
+
+<script>
+  const mektup = document.getElementById('mektup');
+  const mesaj = document.getElementById('mesaj');
+
+  mektup.addEventListener('click', () => {
+    if (mesaj.style.display === 'none' || mesaj.style.display === '') {
+      mesaj.style.display = 'block';
+    } else {
+      mesaj.style.display = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>
